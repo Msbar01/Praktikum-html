@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Demo</title>
+</head>
+<body>
+    <h3>Menambahkan Gambar, Video, dan Audio di HTML</h3>
+
+    <!-- Gambar -->
+    <img src="https://i.pinimg.com/736x/ef/63/36/ef6336200bbd27d3dfeed749825c29f8.jpg" 
+         alt="Contoh Gambar" 
+         width="300" 
+         style="cursor:pointer;" 
+         onclick="alert('Gambar diklik!')">
+        
+
+    <br><br>
+
+    <!-- Video dari file lokal -->
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+    <br><br>
+
+    <!-- Video YouTube (gunakan iframe, bukan tag <video>) -->
+    <iframe width="400" height="250" 
+        src="https://www.youtube.com/embed/CyDfzbfEav4" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="KarenaKamu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+</body>
+</html>
